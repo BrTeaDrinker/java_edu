@@ -28,3 +28,10 @@ gradle-app.setting
 .idea/workspace.xml
 .idea/vcs.xml
 .idea/dictionaries/a_polovnikov.xml
+sandbox/.gradle/5.6/executionHistory/executionHistory.bin
+sandbox/.gradle/5.6/executionHistory/executionHistory.bin
+sandbox/.gradle/buildOutputCleanup/buildOutputCleanup.lock
+sandbox/.gradle/5.6/javaCompile/javaCompile.lock
+sandbox/.gradle/5.6/fileHashes/fileHashes.lock
+*.bin
+*.bin
