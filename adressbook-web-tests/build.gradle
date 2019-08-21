@@ -1,0 +1,22 @@
+apply plugin: 'java'
+
+
+
+repositories {mavenCentral()
+    mavenLocal()
+    jcenter()}
+
+dependencies {implementation 'org.testng:testng:7.0.0'}
+dependencies {implementation 'org.seleniumhq.selenium:selenium-java:4.0.0-alpha-2'}
+dependencies {implementation 'com.katalon:com.katalon.platform.parent:1.0.12'}
+
+
+test {
+    useTestNG()
+    scanForTestClasses = false
+    include '**/*'
+
+    beforeTest { descriptor ->
+        logger.lifecycle("Gradle running test: ${descriptor}")
+    }
+}

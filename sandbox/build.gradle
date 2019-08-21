@@ -1,3 +1,17 @@
 apply plugin: 'java'
-apply plugin: 'application'
-mainClassName = "MyFirstProgram"
+
+repositories {mavenCentral()
+    mavenLocal()
+    jcenter()}
+
+dependencies {implementation 'org.testng:testng:7.0.0'}
+
+test {
+    useTestNG()
+    scanForTestClasses = false
+    include '**/*'
+
+    beforeTest { descriptor ->
+        logger.lifecycle("Gradle running test: ${descriptor}")
+    }
+}
